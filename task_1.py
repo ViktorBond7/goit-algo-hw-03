@@ -34,7 +34,6 @@ if __name__ == "__main__":
     parser.add_argument("destination", nargs="?", default="dist", help="Шлях до директорії призначення (за замовчуванням: dist)")
 
     args = parser.parse_args()
-    print("args", args)
 
     if args.command.lower() == "copy":
         source_path = Path(args.source)
